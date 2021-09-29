@@ -1,0 +1,1 @@
+add_executable(xw001 main.cpp)
