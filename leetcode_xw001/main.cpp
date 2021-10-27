@@ -4,8 +4,12 @@
 
 #include <iostream>
 
+#include "Container_With_Most_Water.h"
+
 int main() {
-  std::cout << "xw001" << std::endl;
+  ContainerWithMostWater::test();
+
+  std::cout << "All tests passed" << std::endl;
   return 0;
 }
 
