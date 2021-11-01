@@ -4,8 +4,14 @@
 
 #include <iostream>
 
+#include "Container_With_Most_Water.h"
+#include "Remove_Duplicates_from_Sorted_Array.h"
+
 int main() {
-  std::cout << "xw001" << std::endl;
+  ContainerWithMostWater::test();
+  RemoveDuplicatesfromSortedArray::test();
+
+  std::cout << "All tests passed" << std::endl;
   return 0;
 }
 
