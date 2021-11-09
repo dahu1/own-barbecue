@@ -4,12 +4,20 @@
 
 #include <iostream>
 
-#include "Container_With_Most_Water.h"
-#include "Remove_Duplicates_from_Sorted_Array.h"
+#include "src/profile.h"
+
+#include "src/Container_With_Most_Water.h"
+#include "src/Remove_Duplicates_from_Sorted_Array.h"
+#include "src/Three_Sum.h"
+
 
 int main() {
-  ContainerWithMostWater::test();
-  RemoveDuplicatesfromSortedArray::test();
+  Profile profile;
+  profile.add_function("ContainerWithMostWater", ContainerWithMostWater::test);
+  profile.add_function("RemoveDuplicatesfromSortedArray", RemoveDuplicatesfromSortedArray::test);
+  profile.add_function("ThreeSum", ThreeSum::test);
+  profile.run_all();
+
 
   std::cout << "All tests passed" << std::endl;
   return 0;
